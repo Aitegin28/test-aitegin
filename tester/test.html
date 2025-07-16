@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ветеринарная служба</title>
+  </head>
+  <body>
+    <nav></nav>
+    <form class="body-class">
+      <legend>Имя</legend>
+      <label>
+        кличка питомца <input type="text" placeholder="Ваше имя" required
+      /></label>
+      <br />
+      <label>
+        имя владельца <input type="text" placeholder="Ваше имя" required
+      /></label>
+      <br />
+      <label>
+        контакты владельца <input type="text" placeholder="Ваше имя" required
+      /></label>
+      <br />
+      <button type="submit">Отправить</button>
+    </form>
+    <h4>Выберите породу</h4>
+    <form>
+      <label for="Dog race select">Порода</label>
+      <select name="Dog race select" id="Dog race select">
+        <option value="select">-- Выберите породу --</option>
+        <option value="afro">Санкт-Петербург</option>
+        <option value="white">белый</option>
+        <option value="metis">метис</option>
+        <option value="чухахуахау">чухахва</option>
+        <option value="пудель">пудел</option>
+        <option value="мопс">Мопс</option>
+      </select>
+      <br />
+      <h4>чем питается?</h4>
+      <label
+        ><input type="checkbox" name="food" value="dry" required /> сухой
+        корм</label
+      >
+      <br />
+      <label
+        ><input type="checkbox" name="food" value="wet" /> влажный корм</label
+      >
+      <br />
+      <label
+        ><input type="checkbox" name="food" value="natural" /> натуральный
+        корм</label
+      >
+      <br />
+      <h4>Пол питомца</h4>
+      <label><input type="radio" name="gender" value="female" /> Самка</label
+      ><br />
+      <label><input type="radio" name="gender" value="male" /> Самец</label>
+      <br />
+      <p>Комментарий</p>
+      <textarea
+        rows="10"
+        cols="20"
+        placeholder="Если хотите добавить чтото важно можно написать здесь"
+      ></textarea>
+      <p>
+        Можете добавить фотографию питомца
+        <input type="file" name="photo" />
+      </p>
+      <button type="submit">сохранить</button>
+      <button type="reset">очистить</button>
+    </form>
+  </body>
+</html>
+<video src="video.mp4" autoplay muted></video>
+<input type="date" placeholder="Выберите дату" />
