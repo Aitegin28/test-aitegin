@@ -137,7 +137,7 @@ a {
   color: #fff;
   text-align: center;
   padding: 60px;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 130%, 0% 100%);
 }
 .feature1 {
   flex: 1;
@@ -181,4 +181,84 @@ p {
 }
 .feature3 img {
   width: 100%;
+}
+.news-section {
+  background-color: #faf8f6;
+  padding: 40px 0;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  left: 20%;
+}
+
+.news-title {
+  font-size: 32px;
+  font-weight: 700;
+  top: 5%;
+  left: 50%;
+  text-transform: uppercase;
+}
+
+.show-all-btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 50%;
+}
+
+.show-all-btn:hover {
+  background-color: black;
+  color: white;
+  position: absolute;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.news-date {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px 12px;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.news-day {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.news-month {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.news-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
 }
