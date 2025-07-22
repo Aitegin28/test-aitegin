@@ -35,7 +35,7 @@ li:hover {
   position: relative;
   max-width: 100%;
 
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .img-logo {
@@ -207,13 +207,13 @@ p {
 .show-all-btn {
   padding: 10px 20px;
   border: 1px solid black;
-  background: transparent;
+  background-color: #fff;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
   position: absolute;
-  left: 50%;
+  left: 51%;
 }
 
 .show-all-btn:hover {
@@ -274,6 +274,7 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
+  border-top: 2px solid #e4e4e4;
 }
 
 .reviews__top {
@@ -293,7 +294,7 @@ body {
   padding: 12px 20px;
   font-weight: bold;
   border: 1px solid #000;
-  background: transparent;
+  background-color: #fff;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -313,11 +314,11 @@ body {
 .arrow {
   width: 70px;
   height: 200px;
-  background: transparent;
-  border: color rgb(223, 209, 209);
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
   font-size: 24px;
   cursor: pointer;
-  color: #000000;
+  color: #080808;
 }
 
 .review-card {
@@ -358,15 +359,19 @@ body {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 0%;
   background: #aaa;
   transition: 0.2s;
+  transform: rotate(45deg);
+  display: inline-block;
+  border: black solid;
+  border-width: 1.5px;
 }
 
 .dot.active {
@@ -377,4 +382,61 @@ body {
 }
 .review-text {
   color: black;
+}
+.login {
+  position: relative;
+  left: 150px;
+}
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__info,
+.footer__social,
+.footer__developer {
+  flex: 1 1 30%;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social__icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social__icons a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.social__icons a:hover {
+  background-color: #444;
+}
+
+.footer__developer img {
+  margin-top: 10px;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  display: inline-block;
 }
